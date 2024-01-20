@@ -59,8 +59,8 @@ const NavbarPage = () => {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
-              Integrations
+            <Link color="foreground" href="/dashBoard">
+              DashBoard
             </Link>
           </NavbarItem>
         </NavbarContent>
