@@ -1,9 +1,10 @@
 "use client";
 
+import SideBar from "@/components/ui/SideBar";
 import { useRouter } from "next/navigation";
 
 export default function DashboardLayout({
-  children, // will be a page or nested layout
+  children,
 }: {
   children: React.ReactNode;
 }) {
@@ -11,7 +12,7 @@ export default function DashboardLayout({
 
   return (
     <section className="flex">
-      {/* <Sidebar /> */}
+      <SideBar />
       <div className="flex-1">{children}</div>
     </section>
   );

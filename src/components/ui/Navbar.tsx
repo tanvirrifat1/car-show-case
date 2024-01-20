@@ -12,6 +12,7 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/react";
 import AcmeLogo from "../../../public/assets/car.png";
+import Image from "next/image";
 
 const NavbarPage = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -39,7 +40,9 @@ const NavbarPage = () => {
           />
           <NavbarBrand>
             <Link href="/home">
-              <p className="font-bold text-inherit">Car-Show-Case</p>
+              <div className="rounded-2xl">
+                <Image src={AcmeLogo} width={80} height={100} alt="" />
+              </div>
             </Link>
           </NavbarBrand>
         </NavbarContent>
