@@ -1,9 +1,11 @@
 "use client";
 
+import NavbarPage from "@/components/ui/Navbar";
+
 const page = () => {
   return (
     <div>
-      <h1>This is main home page</h1>
+      <NavbarPage />
     </div>
   );
 };
